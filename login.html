@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="styles/common.css" />
-    <link rel="stylesheet" href="styles/login.css" />
   </head>
-  <body>
-    <div class="login-container">
-      <span class="login-text">Login</span>
-    </div>
 
-    <script src="scripts/common.js"></script>
-    <script src="scripts/login.js"></script>
+  <body>
+    <form action="index.html">
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Enter Username"
+        required
+        autocomplete="off"
+      /><br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Enter Password"
+        required
+        autocomplete="off"
+      /><br />
+      <input type="submit" value="Login" />
+    </form>
   </body>
 </html>
